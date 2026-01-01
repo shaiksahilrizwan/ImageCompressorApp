@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="@drawable/main_layout_bg"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_weight="1"
+        >
+        <ImageView
+            android:layout_width="350dp"
+            android:layout_height="350dp"
+            android:id="@+id/imageSelected"
+            android:src="@drawable/select_image_btn_pic"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            style="@style/text_style"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/show_Quality"
+            style="@style/text_style"
+            android:text=""
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center"
+        >
+        <SeekBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/seekBar"
+            android:max="100"
+            android:progressDrawable="@drawable/seek_bar_design"
+            android:thumb="@drawable/seek_thumb_design" />
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/btnConvert"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/btn_img"
+            android:scaleType="fitXY"
+            android:adjustViewBounds="true"
+            android:background="@null"
+            android:padding="0dp"
+            android:cropToPadding="true"/>
+    </LinearLayout>
+
+</LinearLayout>

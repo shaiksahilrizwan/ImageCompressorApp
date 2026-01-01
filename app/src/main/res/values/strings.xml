@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">ImageCompressor</string>
+    <string name="tv_hint">Select Image by Clicking above Button</string>
+</resources>
