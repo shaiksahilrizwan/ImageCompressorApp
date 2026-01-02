@@ -90,6 +90,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
         convertButton.setOnClickListener(new View.OnClickListener() {
+            //checking possible conditions
             @Override
             public void onClick(View v) {
                 if (imageUri == null) {
@@ -132,6 +133,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
+    // compress image method
     private void compressorMethod(){
         if(imageCompression==null)
             imageCompression=new ImageCompression(selectedImage,imageUri,MainActivity.this,quality);
@@ -140,6 +142,7 @@ public class MainActivity extends AppCompatActivity {
             imageCompression.setImageUri(imageUri);
             imageCompression.setQuality(quality);
         }
+        // compress image
         try {
             Dialog d=new Dialog(MainActivity.this);
             d.setContentView(R.layout.loading_dialog);
